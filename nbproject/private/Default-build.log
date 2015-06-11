@@ -1,0 +1,37 @@
+
+-------------- Info --------------
+  Compile: Project
+  MMCU: atmega328p
+  F_CPU: 16000000L
+  Hex file: dist/Project.hex
+  Output dir: /home/yourok/Arduino_mk/Project/dist
+
+-------------- Building --------------
+[CX] Compile src/blink.cpp
+[CX] Compile arduino/arduino_src/main.cpp
+[CX] Compile arduino/arduino_src/HID.cpp
+[CX] Compile arduino/arduino_src/Print.cpp
+[CC] Compile arduino/arduino_src/wiring.c
+[CX] Compile arduino/arduino_src/abi.cpp
+[CX] Compile arduino/arduino_src/USBCore.cpp
+[CX] Compile arduino/arduino_src/new.cpp
+[CX] Compile arduino/arduino_src/HardwareSerial.cpp
+[CC] Compile arduino/arduino_src/wiring_pulse.c
+[CX] Compile arduino/arduino_src/CDC.cpp
+[CX] Compile arduino/arduino_src/Tone.cpp
+[CC] Compile arduino/arduino_src/wiring_shift.c
+[CX] Compile arduino/arduino_src/HardwareSerial1.cpp
+[CC] Compile arduino/arduino_src/wiring_digital.c
+[CX] Compile arduino/arduino_src/HardwareSerial2.cpp
+[CX] Compile arduino/arduino_src/Stream.cpp
+[CX] Compile arduino/arduino_src/HardwareSerial3.cpp
+[CX] Compile arduino/arduino_src/IPAddress.cpp
+[CX] Compile arduino/arduino_src/HardwareSerial0.cpp
+[CX] Compile arduino/arduino_src/WMath.cpp
+[CC] Compile arduino/arduino_src/WInterrupts.c
+[CX] Compile arduino/arduino_src/WString.cpp
+[CC] Compile arduino/arduino_src/wiring_analog.c
+[CC] Compile arduino/arduino_src/hooks.c
+[CC] Compile Project
+[OC] Make hex dist/Project.hex
+dist/Project.hex 9010

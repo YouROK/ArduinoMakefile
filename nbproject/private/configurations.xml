@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="arduino">
+        <df name="arduino_src">
+          <in>Arduino.h</in>
+          <in>CDC.cpp</in>
+          <in>Client.h</in>
+          <in>HID.cpp</in>
+          <in>HardwareSerial.cpp</in>
+          <in>HardwareSerial.h</in>
+          <in>HardwareSerial0.cpp</in>
+          <in>HardwareSerial1.cpp</in>
+          <in>HardwareSerial2.cpp</in>
+          <in>HardwareSerial3.cpp</in>
+          <in>HardwareSerial_private.h</in>
+          <in>IPAddress.cpp</in>
+          <in>IPAddress.h</in>
+          <in>Print.cpp</in>
+          <in>Print.h</in>
+          <in>Printable.h</in>
+          <in>Server.h</in>
+          <in>Stream.cpp</in>
+          <in>Stream.h</in>
+          <in>Tone.cpp</in>
+          <in>USBAPI.h</in>
+          <in>USBCore.cpp</in>
+          <in>USBCore.h</in>
+          <in>USBDesc.h</in>
+          <in>Udp.h</in>
+          <in>WCharacter.h</in>
+          <in>WInterrupts.c</in>
+          <in>WMath.cpp</in>
+          <in>WString.cpp</in>
+          <in>WString.h</in>
+          <in>abi.cpp</in>
+          <in>binary.h</in>
+          <in>hooks.c</in>
+          <in>main.cpp</in>
+          <in>new.cpp</in>
+          <in>new.h</in>
+          <in>wiring.c</in>
+          <in>wiring_analog.c</in>
+          <in>wiring_digital.c</in>
+          <in>wiring_private.h</in>
+          <in>wiring_pulse.c</in>
+          <in>wiring_shift.c</in>
+        </df>
+        <df name="avrdude">
+        </df>
+        <df name="variants">
+          <df name="eightanaloginputs">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="ethernet">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="leonardo">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="mega">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="micro">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="robot_control">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="robot_motor">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="standard">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="yun">
+            <in>pins_arduino.h</in>
+          </df>
+        </df>
+      </df>
+      <df name="dist">
+      </df>
+      <df name="env">
+      </df>
+      <df name="src">
+        <in>mainLoop.cpp</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Upload" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
