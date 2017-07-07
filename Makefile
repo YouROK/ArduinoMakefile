@@ -1,6 +1,6 @@
 
 PROGRAM_NAME 	:= $(notdir $(shell pwd))
-ARDUINOMK 		:= nano3
+ARDUINOMK 	:= nano3
 
 
 ARDUINODIR	:= arduino
@@ -8,7 +8,7 @@ include env/$(ARDUINOMK).mk
 
 CC      	:= avr-gcc
 CXX     	:= avr-g++
-OC 			:= avr-objcopy
+OC 		:= avr-objcopy
 
 DEFINE  	:= -DF_CPU=$(F_CPU) -DARDUINO=161
 CFLAGS  	:= -Os -mmcu=$(MCU) -ffunction-sections -fdata-sections
@@ -25,7 +25,7 @@ OBJECTS 	:= $(addprefix $(BUILDDIR)/,$(SOURCES:%.cpp=%.o))
 OBJECTS 	:= $(OBJECTS:%.c=%.o)
 
 BINARY 		:= $(PROGRAM_NAME)
-HEADERSDIR 	:= $(addprefix -I,$(HEADERSDIR)) $(addprefix -I, $(dir $(SOURCES))) 
+HEADERSDIR 	:= $(addprefix -I,$(HEADERSDIR)) $(addprefix -I, $(dir $(SOURCES)))
 
 COM 		:= /dev/ttyUSB0
 BAUD		:= 57600
@@ -71,5 +71,5 @@ clean_all: clean
 	@rm -rf $(DISTDIR)
 
 upload: info $(BINARY)
-	@$(ARDUINODIR)/avrdude/avrdude_bin -q -V -p$(MCU) -C$(ARDUINODIR)/avrdude/avrdude.conf -D -carduino -b$(BAUD) -P$(COM) -Uflash:w:$(DISTDIR)/$(BINARY).hex:i
+	@$(ARDUINODIR)/avrdude/avrdude -q -V -p$(MCU) -C$(ARDUINODIR)/avrdude/avrdude.conf -D -carduino -b$(BAUD) -P$(COM) -Uflash:w:$(DISTDIR)/$(BINARY).hex:i
 

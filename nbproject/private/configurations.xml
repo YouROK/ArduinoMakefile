@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="95">
+<configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
       <df name="arduino">
@@ -17,6 +17,8 @@
           <in>HardwareSerial_private.h</in>
           <in>IPAddress.cpp</in>
           <in>IPAddress.h</in>
+          <in>PluggableUSB.cpp</in>
+          <in>PluggableUSB.h</in>
           <in>Print.cpp</in>
           <in>Print.h</in>
           <in>Printable.h</in>
@@ -44,16 +46,23 @@
           <in>wiring_analog.c</in>
           <in>wiring_digital.c</in>
           <in>wiring_private.h</in>
+          <in>wiring_pulse.S</in>
           <in>wiring_pulse.c</in>
           <in>wiring_shift.c</in>
         </df>
         <df name="avrdude">
         </df>
         <df name="variants">
+          <df name="circuitplay32u4">
+            <in>pins_arduino.h</in>
+          </df>
           <df name="eightanaloginputs">
             <in>pins_arduino.h</in>
           </df>
           <df name="ethernet">
+            <in>pins_arduino.h</in>
+          </df>
+          <df name="gemma">
             <in>pins_arduino.h</in>
           </df>
           <df name="leonardo">
@@ -77,6 +86,14 @@
           <df name="yun">
             <in>pins_arduino.h</in>
           </df>
+        </df>
+      </df>
+      <df name="build">
+        <df name="arduino">
+          <df name="arduino_src">
+          </df>
+        </df>
+        <df name="src">
         </df>
       </df>
       <df name="dist">
